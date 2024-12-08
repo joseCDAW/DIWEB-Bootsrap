@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Aespa - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3/scss/estilos.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="recursos/scpritMiembros.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container px-50">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img src="img/aespaDramaLogo.png" alt="logo Aespa" width="13%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/discografia.html">
+                <p class="h3">Discografía</p>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="miembrosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p class="h3 m-0">Miembros</p>
+              </a>
+              <ul
+                class="dropdown-menu bg-light text-dark shadow"
+                aria-labelledby="miembrosDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="paginas/miembros.html">
+                    OT4 (Todas las miembros)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="paginas/miembros.html?tab=pills-karina"
+                  >
+                    Karina
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="paginas/miembros.html?tab=pills-giselle"
+                  >
+                    Giselle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="paginas/miembros.html?tab=pills-winter"
+                  >
+                    Winter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="paginas/miembros.html?tab=pills-ningning"
+                  >
+                    NingNing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/redes.html">
+                <p class="h3">Redes</p>
+              </a>
+            </li>
+          </ul>
+          <!-- Search bar -->
+          <ul style="list-style: none">
+            <li class="nav-item">
+              <form class="d-flex align-items-center" style="width: 100%">
+                <input
+                  id="barraBusqueda"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Video Section -->
+    <div class="container-fluid position-relative text-center" class="video">
+      <div
+        class="overlay position-absolute top-50 start-50 translate-middle text-white bg-dark"
+        style="--bs-bg-opacity: 0.35"
+      >
+        <h2 class="fw-bold">Explora Kwangya</h2>
+        <p class="lead">
+          Sumergete en el mundo de Aespa a través de sus vídeos.
+        </p>
+      </div>
+      <video autoplay muted loop class="w-100 rounded">
+        <source src="video/fondo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Texto y botón canción -->
+
+    <div class="container-fluid text-center py-5 text-white" id="home">
+      <h1 class="fw-bold">WHIPLASH</h1>
+      <p class="lead">Escucha la ultima canción del girlgroup Aespa.</p>
+      <a
+        href="https://youtu.be/jWQx2f-CErU"
+        class="btn btn-light text-uppercase fw-bold rounded-pill px-4 py-2 mt-3"
+        target="”_blank”"
+        >Reproducir MV</a
+      >
+    </div>
+
+    <!-- Carrusel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide custom-carousel mx-auto"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/Aespa_Whiplash_Concept_Photo_1.webp"
+            class="d-block w-100"
+            alt="Primera foto, concepto Whiplash"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/AespaDrama.jpg"
+            class="d-block w-100"
+            alt="Segunda foto, concepto Drama"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/AespaNextLevel.jpg"
+            class="d-block w-100"
+            alt="Tercera foto, concepto Next Level"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Sección explicación -->
+    <div
+      class="container text-center bg-dark bg-opacity-50 text-white p-5 rounded-3 mt-5 mb-5"
+      id="explicacion"
+    >
+      <h2 class="fw-bold mb-4">El Mundo de aespa</h2>
+
+      <!-- Primer párrafo con imagen a la derecha -->
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-8 text-start mb-3 mb-lg-0">
+          <p class="fs-4 fs-lg-3">
+            El mundo de aespa se basa en el concepto de que existimos en dos
+            mundos: el Mundo Real y el Mundo Virtual. En el Mundo Virtual todos
+            tenemos nuestro propio avatar, æ, que se crea a partir de los datos
+            que hemos subido a internet. Son los que elegimos para mostrar al
+            mundo, el yo online perfecto.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="img/aes.jpg"
+            alt="Imagen de las aes de aespa"
+            class="img-fluid rounded"
+          />
+          <p class="small">Las aes de aespa.</p>
+        </div>
+      </div>
+
+      <!-- Segundo párrafo con imagen a la izquierda -->
+      <div class="row align-items-center mb-4 flex-lg-row-reverse">
+        <div class="col-lg-8 text-start mb-3 mb-lg-0">
+          <p class="fs-4 fs-lg-3">
+            Pero el Mundo Virtual no es el lugar feliz y perfecto que creemos.
+            En la oscuridad vive un virus llamado Black Mamba que perturba la
+            conexión 'SYNK' entre aespa y sus æs. Por eso, aespa fue al Mundo
+            Virtual de KWANGYA para derrotar a Black Mamba con la ayuda de
+            nævis, guardiana del mundo virtual de FLAT para deshacerse de este
+            virus.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="img/Kwangya.webp"
+            alt="Imagen de Kwangya"
+            class="img-fluid rounded"
+          />
+          <p class="small">Kwangya.</p>
+        </div>
+      </div>
+
+      <!-- Tercer párrafo con imagen a la derecha -->
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-8 text-start mb-3 mb-lg-0">
+          <p class="fs-4 fs-lg-3">
+            Aespa, sus æs y nævis vencieron con éxito al virus usando sus
+            superpoderes y aespa regresó al Mundo Real mientras que nævis fue
+            enviado a KOSMO por violar la regla de «no salir de FLAT». El
+            tribunal supremo del Mundo Virtual, KOSMO, envió a nævis al Mundo
+            Real a petición suya.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="img/blackMamba.png"
+            alt="Imagen de Black Mamba"
+            class="img-fluid rounded"
+          />
+          <p class="small">Black Mamba.</p>
+        </div>
+      </div>
+
+      <!-- Cuarto párrafo con imagen a la izquierda -->
+      <div class="row align-items-center mb-4 flex-lg-row-reverse">
+        <div class="col-lg-8 text-start mb-3 mb-lg-0">
+          <p class="fs-4 fs-lg-3">
+            aespa y nævis se encontraron en el Mundo Real y empezaron a suceder
+            cosas extrañas, un Fenómeno Extraño. El Mundo Virtual comenzó a
+            «filtrarse» en el Mundo Real.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="img/aespa&naevis.jpg"
+            alt="Imagen del aespa junto a Naevis"
+            class="img-fluid rounded"
+          />
+          <p class="small">Aespa y nævis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Redirecciones -->
+    <div class="container my-5" id="cards">
+      <div class="row justify-content-center">
+        <div class="col-md-3 d-flex justify-content-center mb-3">
+          <a
+            href="paginas/miembros.html"
+            class="btn btn-light text-uppercase fw-bold rounded-pill w-100 px-4 py-2"
+          >
+            Ver Miembros
+          </a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center mb-3">
+          <a
+            href="paginas/discografia.html"
+            class="btn btn-light text-uppercase fw-bold rounded-pill w-100 px-4 py-2"
+          >
+            Ver Discografía
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-white py-3"
+      style="background-color: #b9a0db"
+    >
+      <p class="mb-0">&copy; 2024 Info aespa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

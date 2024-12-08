@@ -1,0 +1,226 @@
+$gradient-start: #91a8eb;
+$gradient-end: #e198cb;
+$text-color: white;
+$navbar-bg: transparent;
+$play-btn-bg: #ffffff;
+$play-btn-hover-bg: #7597de;
+$profile-bg: rgba(0, 0, 0, 0.5);
+$fuentes: "aespa Regular", Times, sans-serif;
+
+@font-face {
+    font-family: 'aespa Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('aespa Regular'), url('../../fuente/aespa_Regular.woff') format('woff'),
+}
+
+html,
+body {
+    height: 100%;
+    /* Asegúrate de que el html y body ocupen el 100% */
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+}
+
+body {
+    background: linear-gradient(to right, $gradient-start, $gradient-end);
+    color: $text-color;
+    font-family: $fuentes;
+}
+
+.navbar {
+    background-color: $navbar-bg;
+}
+
+.navbar a {
+    color: $text-color;
+    margin: 0 10px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    /* Cambia el color de fondo al pasar el ratón */
+    color: white;
+    /* Cambia el color del texto al pasar el ratón */
+}
+
+#home,
+#explicacion,
+#cards,
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.main-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.play-btn {
+    background: $play-btn-bg;
+    color: #2b1055;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.play-btn:hover {
+    background: $play-btn-hover-bg;
+    color: $text-color;
+}
+
+.profile-section {
+    background: $profile-bg;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+
+}
+
+.video {
+    .overlay {
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.5); // Usa transparencia para resaltar el texto
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    video {
+        height: auto;
+        max-height: 600px;
+        object-fit: cover; // Para asegurar un buen ajuste del video
+    }
+}
+
+/* Personalización del ancho del carrusel */
+.custom-carousel {
+    width: 70%;
+    /* Ocupa el 80% del ancho de la página */
+}
+
+/* Cambiar el color de las flechas del carrusel */
+.carousel-control-prev-icon {
+    background-color: #91a8eb;
+    /* Color de la flecha izquierda */
+    border-radius: 50%;
+    /* Hace la flecha más estética */
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.carousel-control-next-icon {
+    background-color: #e198cb;
+    /* Color de la flecha derecha */
+    border-radius: 50%;
+    /* Hace la flecha más estética */
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+.profile-section {
+    max-width: 90%;
+    /* Ajusta según el tamaño deseado */
+    width: 100%;
+    /* Usa todo el espacio disponible */
+    margin: auto;
+    /* Centra horizontalmente */
+}
+
+.nav-pills .nav-link {
+    color: white;
+    /* Color para pestañas no seleccionadas */
+}
+
+.nav-pills .nav-link.active {
+    color: white;
+    /* Color para la pestaña activa */
+}
+
+.custom-popover {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #444444;
+}
+
+.custom-popover .popover-header {
+    font-weight: bold;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.custom-popover .popover-body {
+    color: #dddddd;
+}
+
+/* Asegura que la tabla se ajuste en móviles */
+.table-responsive {
+    overflow-x: auto;
+    /* Permite que la tabla se adapte */
+}
+
+.table td,
+.table th {
+    white-space: nowrap;
+    /* Evita que el texto se corte en varias líneas */
+    text-overflow: ellipsis;
+    /* Agrega puntos suspensivos para texto largo */
+}
+
+.table img {
+    max-width: 100%;
+    /* Asegura que las imágenes se ajusten a móviles */
+    height: auto;
+}
+
+#barraBusqueda {
+    flex: 1;
+    min-width: 200px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .col-canciones {
+        display: none;
+    }
+}
+
+
+
+@import "../../bootstrap-5.3.3/scss/bootstrap";

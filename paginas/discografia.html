@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Aespa - Discografía</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../bootstrap-5.3.3/scss/estilos.css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <script src="../recursos/scpritMiembros.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container px-50">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img src="../img/aespaDramaLogo.png" alt="logo Aespa" width="13%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/discografia.html">
+                <p class="h3">Discografía</p>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="miembrosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p class="h3 m-0">Miembros</p>
+              </a>
+              <ul
+                class="dropdown-menu bg-light text-dark shadow"
+                aria-labelledby="miembrosDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="miembros.html">
+                    OT4 (Todas las miembros)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-karina"
+                  >
+                    Karina
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-giselle"
+                  >
+                    Giselle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-winter"
+                  >
+                    Winter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-ningning"
+                  >
+                    NingNing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/redes.html">
+                <p class="h3">Redes</p>
+              </a>
+            </li>
+          </ul>
+          <!-- Search bar -->
+          <ul style="list-style: none">
+            <li class="nav-item">
+              <form class="d-flex align-items-center" style="width: 100%">
+                <input
+                  id="barraBusqueda"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div
+      class="container text-center bg-dark bg-opacity-50 text-white p-5 rounded-3 mt-5 mb-5"
+      id="explicacion"
+    >
+      <h1 class="mb-4">Discografía</h1>
+      <p class="mb-4">
+        Descubre los lanzamientos musicales de Aespa, ordenados por año. (No se
+        incluyen Singles, Japanese releases ni OSTs)
+      </p>
+
+      <!-- Tabla de imágenes -->
+      <div class="table-responsive">
+        <table class="table table-borderless text-white">
+          <thead class="text-uppercase">
+            <tr class="text-center">
+              <th style="white-space: nowrap">Lanzamiento</th>
+              <th style="white-space: nowrap">Año</th>
+              <th class="col-canciones" style="white-space: nowrap">
+                Canciones Principales
+              </th>
+              <th style="white-space: nowrap">Tipo</th>
+            </tr>
+          </thead>
+          <tbody class="align-middle">
+            <!-- Whiplash -->
+            <tr>
+              <td class="text-center">
+                <img
+                  src="../img/d6_whiplash.jpg"
+                  alt="Whiplash"
+                  width="150"
+                  class="rounded shadow"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="hover focus"
+                  title="Whiplash"
+                  data-bs-content="Mini álbum lanzado en 2024. Energético y fresco, con ritmos electrizantes."
+                />
+                <p>Whiplash</p>
+              </td>
+              <td class="align-middle text-center"><h3>2024</h3></td>
+              <td class="col-canciones align-middle text-center">
+                <a href="https://youtu.be/jWQx2f-CErU">Whiplash (Title)</a>
+              </td>
+              <td class="text-center">Mini álbum</td>
+            </tr>
+            <!-- Armageddon -->
+            <tr>
+              <td class="text-center">
+                <img
+                  src="../img/d5_armageddon.jpg"
+                  alt="Armageddon"
+                  width="150"
+                  class="rounded shadow"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="hover focus"
+                  title="Armageddon"
+                  data-bs-content="Full álbum lanzado en 2024. Con un sonido épico y atmósfera poderosa.<br>Su canción pre-release fue Supernova."
+                />
+                <p>Armageddon</p>
+              </td>
+              <td class="align-middle text-center"><h3>2024</h3></td>
+              <td class="col-canciones align-middle text-center">
+                <a href="https://youtu.be/phuiiNCxRMg"
+                  >Supernova (Pre-release)</a
+                >
+                <br />
+                <a href="https://youtu.be/nFYwcndNuOY">Armageddon (Title)</a>
+              </td>
+              <td class="text-center">Full álbum</td>
+            </tr>
+            <!-- Drama -->
+            <tr>
+              <td class="text-center">
+                <img
+                  src="../img/d4_drama.jpg"
+                  alt="Drama"
+                  width="150"
+                  class="rounded shadow"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="hover focus"
+                  title="Drama"
+                  data-bs-content="Mini álbum lanzado en 2024. Con una narrativa emocional y poderosa."
+                />
+                <p>Drama</p>
+              </td>
+              <td class="align-middle text-center"><h3>2024</h3></td>
+              <td class="col-canciones align-middle text-center">
+                <a href="https://youtu.be/D8VEhcPeSlc">Drama (Title)</a>
+              </td>
+              <td class="text-center">Mini álbum</td>
+            </tr>
+            <!-- MY World -->
+            <tr>
+              <td class="text-center">
+                <img
+                  src="../img/d3_myWorld.jpg"
+                  alt="MY World"
+                  width="150"
+                  class="rounded shadow"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="hover focus"
+                  title="MY World"
+                  data-bs-content="Mini álbum lanzado en 2023. Contiene canciones como 'Spicy' y 'Welcome to My World'."
+                />
+                <p>MY World</p>
+              </td>
+              <td class="align-middle text-center"><h3>2023</h3></td>
+              <td class="col-canciones align-middle text-center">
+                <a href="https://youtu.be/0xdB_vo4r2c"
+                  >Welcome to My World (Pre-release)</a
+                >
+                <br />
+                <a href="https://youtu.be/Os_heh8vPfs">Spicy (Title)</a>
+              </td>
+              <td class="text-center">Mini álbum</td>
+            </tr>
+            <!-- Girls -->
+            <tr>
+              <td class="text-center">
+                <img
+                  src="../img/d2_girls.jpg"
+                  alt="Girls"
+                  width="150"
+                  class="rounded shadow"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="hover focus"
+                  title="Girls"
+                  data-bs-content="Segundo mini álbum, lanzado en 2022.<br>Pre-release: Illusion. <br>Title track: Girls."
+                />
+                <p>Girls</p>
+              </td>
+              <td class="align-middle text-center"><h3>2022</h3></td>
+              <td class="col-canciones align-middle text-center">
+                <a href="https://youtu.be/BpCvYeK5hcE"
+                  >Illusion (Pre-release)</a
+                >
+                <br />
+                <a href="https://youtu.be/dYRITmpFbJ4">Girls (Title)</a>
+              </td>
+              <td class="text-center">Mini álbum</td>
+            </tr>
+            <!-- Savage -->
+            <tr>
+              <td class="text-center">
+                <img
+                  src="../img/d1_savage.jpg"
+                  alt="Savage"
+                  width="150"
+                  class="rounded shadow"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="hover focus"
+                  title="Savage"
+                  data-bs-content="Primer mini-albúm de aespa, salió un año después de su single debut 'Black Mamba'.<br>Title track: Savage."
+                />
+                <p>Savage</p>
+              </td>
+              <td class="align-middle text-center"><h3>2021</h3></td>
+              <td class="col-canciones align-middle text-center">
+                <a href="https://youtu.be/WPdWvnAAurg">Savage (Title)</a>
+              </td>
+              <td class="text-center">Mini álbum</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-white py-3"
+      style="background-color: #b9a0db"
+    >
+      <p class="mb-0">&copy; 2024 Info aespa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Inicializar popovers
+      document.addEventListener("DOMContentLoaded", function () {
+        // Selecciona todos los elementos con popover
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+
+        // Inicializa los popovers
+        popoverTriggerList.forEach(function (popoverTriggerEl) {
+          new bootstrap.Popover(popoverTriggerEl, {
+            trigger: "hover",
+            html: true, // Permitir HTML en el contenido
+          });
+        });
+
+        // Escuchar el evento cuando se muestra el popover
+        document.addEventListener("shown.bs.popover", function (e) {
+          // Buscar el popover generado
+          const popover = document.querySelector(".popover");
+          if (popover) {
+            // Aplicar los estilos en línea directamente
+            popover.style.fontFamily = "'Gill Sans','Roboto', sans-serif";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
