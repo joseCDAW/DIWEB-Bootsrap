@@ -230,51 +230,64 @@
         </div>
       </div>
 
-      <!-- Formulario -->
+      <!-- Formulario Horizontal -->
       <div class="card shadow">
         <div class="card-body">
           <h4 class="card-title text-center mb-4">
             Suscríbete para recibir actualizaciones
           </h4>
-          <form class="row g-3 flex-column align-items-center">
-            <div class="col-12">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Tu nombre"
-                required
-              />
+          <form>
+            <div class="row mb-3">
+              <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
             </div>
-            <div class="col-12">
-              <label for="email" class="form-label">Correo Electrónico</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="ejemplo@correo.com"
-                required
-              />
+
+            <div class="row mb-3">
+              <label for="email" class="col-sm-3 col-form-label"
+                >Correo Electrónico</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="ejemplo@correo.com"
+                  required
+                />
+              </div>
             </div>
-            <div class="col-12">
-              <label for="plataforma" class="form-label"
+
+            <div class="row mb-3">
+              <label for="plataforma" class="col-sm-3 col-form-label"
                 >Plataforma Favorita</label
               >
-              <select class="form-select" id="plataforma" required>
-                <option selected disabled>Elige una</option>
-                <option>Instagram</option>
-                <option>Twitter</option>
-                <option>YouTube</option>
-                <option>Facebook</option>
-                <option>TikTok</option>
-                <option>Weibo</option>
-              </select>
+              <div class="col-sm-9">
+                <select class="form-select" id="plataforma" required>
+                  <option selected disabled>Elige una</option>
+                  <option>Instagram</option>
+                  <option>Twitter</option>
+                  <option>YouTube</option>
+                  <option>Facebook</option>
+                  <option>TikTok</option>
+                  <option>Weibo</option>
+                </select>
+              </div>
             </div>
-            <div class="col-12 text-center mt-3">
-              <button type="submit" class="btn btn-primary w-50">
-                Suscribirse
-              </button>
+
+            <div class="row mb-3">
+              <div class="col-sm-9 offset-sm-3">
+                <button type="submit" class="btn btn-primary w-100">
+                  Suscribirse
+                </button>
+              </div>
             </div>
           </form>
         </div>
