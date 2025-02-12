@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container px-50">
         <a class="navbar-brand fw-bold" href="../index.html">
-          <img src="../img/aespaDramaLogo.png" alt="logo Aespa" width="13%" />
+          <img src="../img/LogoVectorAespa3.svg" alt="logo Aespa" width="25%" />
         </a>
         <button
           class="navbar-toggler"
@@ -214,6 +214,9 @@
             digitales.
           </p>
           <br />
+          <canvas id="gameCanvas"></canvas>
+
+          <br />
           <h3><b>Fandom:</b> MY</h3>
           <br /><img
             src="../img/MY_logo.webp"
@@ -343,7 +346,7 @@
 
     <!-- Footer -->
     <footer
-    class="text-center text-white py-3 text-white bg-dark"
+      class="text-center text-white py-3 text-white bg-dark"
       style="background-color: #b9a0db"
     >
       <p class="mb-0">&copy; 2024 Info aespa. Todos los derechos reservados.</p>
@@ -362,5 +365,69 @@
         document.querySelector(`#${tabId}`).classList.add('show', 'active');
       }
     </script> -->
+    <script>
+      const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+      const container = canvas.parentElement; // Contenedor del canvas
+    
+      // Cargar imágenes
+      const bgImage = new Image();
+      bgImage.src = "../img/CanvaFondo.png"; // Cambia por la ruta correcta
+    
+      const characters = [
+        "",
+        "../img/CanvaMiembros1.png",
+        "../img/CanvaMiembros2.png",
+        "../img/CanvaMiembros3.png",
+        "../img/CanvaMiembros4.png",
+      ].map((src) => {
+        let img = new Image();
+        img.src = src;
+        return img;
+      });
+    
+      let currentIndex = 0; // Índice del personaje que se mostrará
+    
+      function resizeCanvas() {
+        // Ajustar el ancho del canvas al del contenedor
+        canvas.width = container.clientWidth;
+        
+        // Mantener la relación de aspecto de la imagen de fondo
+        const aspectRatio = bgImage.width / bgImage.height;
+        canvas.height = canvas.width / aspectRatio;
+    
+        // Redibujar la escena después de cambiar el tamaño
+        drawScene();
+      }
+    
+      function drawScene() {
+        // Dibujar el fondo ajustado al tamaño del canvas
+        ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
+    
+        // Dibujar personajes hasta el índice actual
+        for (let i = 0; i <= currentIndex; i++) {
+          ctx.drawImage(characters[i], 0, -50, canvas.width, canvas.height + 50); // Ajustar tamaño a canvas
+        }
+      }
+    
+      bgImage.onload = function () {
+        resizeCanvas(); // Ajustar el tamaño inicial
+        drawScene();
+    
+        // Agregar personajes uno a uno cada 1.5 segundos
+        let interval = setInterval(() => {
+          if (currentIndex < characters.length - 1) {
+            currentIndex++;
+            drawScene();
+          } else {
+            clearInterval(interval); // Detener cuando todos estén en pantalla
+          }
+        }, 1500);
+      };
+    
+      // Redimensionar canvas cuando cambie el tamaño de la ventana
+      window.addEventListener("resize", resizeCanvas);
+    </script>
+    
   </body>
 </html>

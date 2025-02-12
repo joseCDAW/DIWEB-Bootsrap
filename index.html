@@ -6,15 +6,17 @@
     <title>Info Aespa - Inicio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-5.3.3/scss/estilos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <script src="recursos/scpritMiembros.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container px-50">
         <a class="navbar-brand fw-bold" href="index.html">
-          <img src="img/aespaDramaLogo.png" alt="logo Aespa" width="13%" />
+          <img src="img/LogoVectorAespa3.svg" alt="logo Aespa" width="25%" />
         </a>
         <button
           class="navbar-toggler"
@@ -122,7 +124,7 @@
         class="overlay position-absolute top-50 start-50 translate-middle text-white bg-dark"
         style="--bs-bg-opacity: 0.35"
       >
-        <h2 class="fw-bold">Explora Kwangya</h2>
+        <h1 class="fw-bold gradient-text">Explora Kwangya</h1>
         <p class="lead">
           Sumergete en el mundo de Aespa a través de sus vídeos.
         </p>
@@ -135,7 +137,7 @@
 
     <!-- Texto y botón canción -->
 
-    <div class="container-fluid text-center py-5 text-white" id="home">
+    <div class="container-fluid text-center py-5 text-white" data-aos="fade-down" data-aos-duration="1200" id="home">
       <h1 class="fw-bold">WHIPLASH</h1>
       <p class="lead">Escucha la ultima canción del girlgroup Aespa.</p>
       <a
@@ -226,7 +228,7 @@
       <h2 class="fw-bold mb-4">El Mundo de aespa</h2>
 
       <!-- Primer párrafo con imagen a la derecha -->
-      <div class="row align-items-center mb-4">
+      <div class="row align-items-center mb-4 overflow-hidden" data-aos="fade-right">
         <div class="col-lg-8 text-start mb-3 mb-lg-0">
           <p class="fs-4 fs-lg-3">
             El mundo de aespa se basa en el concepto de que existimos en dos
@@ -249,7 +251,7 @@
       </div>
 
       <!-- Segundo párrafo con imagen a la izquierda -->
-      <div class="row align-items-center mb-4 flex-lg-row-reverse">
+      <div class="row align-items-center mb-4 flex-lg-row-reverse" data-aos="fade-up">
         <div class="col-lg-8 text-start mb-3 mb-lg-0">
           <p class="fs-4 fs-lg-3">
             Pero el Mundo Virtual no es el lugar feliz y perfecto que creemos.
@@ -266,12 +268,14 @@
             alt="Imagen de Kwangya"
             class="img-fluid rounded"
           />
-          <p class="small text-white bg-dark bg-opacity-75 px-2 py-1 rounded">Kwangya.</p>
+          <p class="small text-white bg-dark bg-opacity-75 px-2 py-1 rounded">
+            Kwangya.
+          </p>
         </div>
       </div>
 
       <!-- Tercer párrafo con imagen a la derecha -->
-      <div class="row align-items-center mb-4">
+      <div class="row align-items-center mb-4" data-aos="fade-right">
         <div class="col-lg-8 text-start mb-3 mb-lg-0">
           <p class="fs-4 fs-lg-3">
             Aespa, sus æs y nævis vencieron con éxito al virus usando sus
@@ -287,12 +291,14 @@
             alt="Imagen de Black Mamba"
             class="img-fluid rounded"
           />
-          <p class="small text-white bg-dark bg-opacity-75 px-2 py-1 rounded">Black Mamba.</p>
+          <p class="small text-white bg-dark bg-opacity-75 px-2 py-1 rounded">
+            Black Mamba.
+          </p>
         </div>
       </div>
 
       <!-- Cuarto párrafo con imagen a la izquierda -->
-      <div class="row align-items-center mb-4 flex-lg-row-reverse">
+      <div class="row align-items-center mb-4 flex-lg-row-reverse" data-aos="fade-up">
         <div class="col-lg-8 text-start mb-3 mb-lg-0">
           <p class="fs-4 fs-lg-3">
             aespa y nævis se encontraron en el Mundo Real y empezaron a suceder
@@ -306,7 +312,9 @@
             alt="Imagen del aespa junto a Naevis"
             class="img-fluid rounded"
           />
-          <p class="small text-white bg-dark bg-opacity-75 px-2 py-1 rounded">Aespa y nævis.</p>
+          <p class="small text-white bg-dark bg-opacity-75 px-2 py-1 rounded">
+            Aespa y nævis.
+          </p>
         </div>
       </div>
     </div>
@@ -345,3 +353,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+<script>
+  AOS.init();
+</script>

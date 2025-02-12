@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Info Aespa - Discografía</title>
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
     <link rel="stylesheet" href="../bootstrap-5.3.3/scss/estilos.css" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="../recursos/scpritMiembros.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -19,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container px-50">
         <a class="navbar-brand fw-bold" href="../index.html">
-          <img src="../img/aespaDramaLogo.png" alt="logo Aespa" width="13%" />
+          <img src="../img/LogoVectorAespa3.svg" alt="logo Aespa" width="25%" />
         </a>
         <button
           class="navbar-toggler"
@@ -122,6 +120,7 @@
     <div
       class="container text-center bg-dark bg-opacity-50 text-white p-5 rounded-3 mt-5 mb-5"
       id="explicacion"
+      data-aos="fade-down"
     >
       <h1 class="mb-4">Discografía</h1>
       <p class="mb-4">
@@ -131,7 +130,10 @@
 
       <!-- Tabla de imágenes -->
       <div class="table-responsive">
-        <table class="table table-bordered table-striped text-white">
+        <table
+          class="table table-bordered table-striped text-white"
+          data-aos="fade-right"
+        >
           <thead class="text-uppercase">
             <tr class="text-center">
               <th style="white-space: nowrap">Lanzamiento</th>
@@ -284,11 +286,24 @@
           </tbody>
         </table>
       </div>
+
+      <div class="container-fluid mt-5" data-aos="fade-down">
+        <h1 class="mb-4">Actuación Whiplash</h1>
+        <div class="ratio ratio-16x9">
+          <video controls>
+            <source
+              src="../video/AespaWhiplashResultado720Comprimido.mp4"
+              type="video/webm"
+            />
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer
-    class="text-center text-white py-3 text-white bg-dark"
+      class="text-center text-white py-3 text-white bg-dark"
       style="background-color: #b9a0db"
     >
       <p class="mb-0">&copy; 2024 Info aespa. Todos los derechos reservados.</p>
@@ -325,3 +340,6 @@
     </script>
   </body>
 </html>
+<script>
+  AOS.init();
+</script>
