@@ -295,6 +295,24 @@ footer {
     transform: scaleX(1);
 }
 
+@keyframes glow {
+    0% {
+        filter: brightness(50%);
+    }
+
+    50% {
+        filter: brightness(100%);
+    }
+
+    100% {
+        filter: brightness(50%);
+    }
+}
+
+.logo {
+    animation: glow 2s infinite alternate ease-in-out;
+}
+
 
 
 @import "../../bootstrap-5.3.3/scss/bootstrap";
