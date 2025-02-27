@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info Aespa - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-5.3.3/scss/estilos.css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <script src="../recursos/scpritMiembros.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container px-50">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img
+            src="../img/LogoVectorAespa3.svg"
+            class="logo"
+            alt="logo Aespa"
+            width="25%"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/discografia.html">
+                <p class="h3">Discografía</p>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="miembrosDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p class="h3 m-0">Miembros</p>
+              </a>
+              <ul
+                class="dropdown-menu bg-light text-dark shadow"
+                aria-labelledby="miembrosDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-dark" href="miembros.html">
+                    OT4 (Todas las miembros)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-karina"
+                  >
+                    Karina
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-giselle"
+                  >
+                    Giselle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-winter"
+                  >
+                    Winter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-dark"
+                    href="miembros.html?tab=pills-ningning"
+                  >
+                    NingNing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/tours.html">
+                <p class="h3">Tours</p>
+              </a>
+            </li>
+          </ul>
+          <!-- Search bar -->
+          <ul style="list-style: none">
+            <li class="nav-item">
+              <form class="d-flex align-items-center" style="width: 100%">
+                <input
+                  id="barraBusqueda"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="container text-center bg-dark bg-opacity-50 text-white p-5 rounded-3 mt-5 mb-5"
+      id="explicacion"
+    >
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-ot4"
+            type="button"
+            role="tab"
+            aria-controls="pills-ot4"
+            aria-selected="true"
+          >
+            OT4
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-karina-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-karina"
+            type="button"
+            role="tab"
+            aria-controls="pills-karina"
+            aria
+            -selected="false"
+          >
+            KARINA
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-giselle-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-giselle"
+            type="button"
+            role="tab"
+            aria-controls="pills-giselle"
+            aria-selected="false"
+          >
+            GISELLE
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-winter-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-winter"
+            type="button"
+            role="tab"
+            aria-controls="pills-winter"
+            aria-selected="false"
+          >
+            WINTER
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-ningning-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-ningning"
+            type="button"
+            role="tab"
+            aria-controls="pills-ningning"
+            aria-selected="false"
+          >
+            NINGNING
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <!-- OT4 -->
+        <div
+          class="tab-pane fade show active"
+          id="pills-ot4"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <h2>OT4</h2>
+          <img
+            src="../img/OT4.png"
+            alt="Aespa OT4 recibiendo un premio"
+            width="50%"
+          />
+          <br /><br />
+          <p>
+            Aespa es un grupo femenino de SM Entertainment formado por cuatro
+            integrantes: Karina, Giselle, Winter y Ningning. Debutaron el 17 de
+            noviembre de 2020 con el sencillo "Black Mamba". Son conocidas por
+            su concepto único que combina un universo virtual con avatares
+            digitales.
+          </p>
+          <br />
+          <canvas id="gameCanvas"></canvas>
+
+          <br />
+          <h3><b>Fandom:</b> MY</h3>
+          <br /><img
+            src="../img/MY_logo.webp"
+            alt="Logo del fandom MY"
+            width="15%"
+          />
+        </div>
+        <!-- Karina -->
+        <div
+          class="tab-pane fade"
+          id="pills-karina"
+          role="tabpanel"
+          aria-labelledby="pills-karina-tab"
+          tabindex="0"
+        >
+          <h2>Karina</h2>
+          <img src="../img/karina.webp" alt="Foto de Karina" width="25%" />
+          <br />
+          <p>
+            <strong>Nombre real:</strong> Yoo Jimin<br />
+            <strong>Nacionalidad:</strong>
+            <img
+              src="../img/Flag_of_South_Korea.svg.png"
+              alt="Bandera de Corea del Sur"
+              width="4%"
+            /><br />
+            <strong>Cumpleaños:</strong> 11 de abril de 2000<br />
+            <strong>Posición:</strong> Líder, Bailarina Principal, Vocalista y
+            Rapera
+          </p>
+          <p>
+            Karina es conocida por su carisma en el escenario y su impresionante
+            habilidad de baile. Antes de debutar, participó en el MV de Taemin
+            "Want".
+          </p>
+        </div>
+        <!-- Giselle -->
+        <div
+          class="tab-pane fade"
+          id="pills-giselle"
+          role="tabpanel"
+          aria-labelledby="pills-giselle-tab"
+          tabindex="0"
+        >
+          <h2>Giselle</h2>
+          <img src="../img/giselle.webp" alt="Foto de Giselle" width="25%" />
+          <br />
+          <p>
+            <strong>Nombre real:</strong> Uchinaga Aeri<br />
+            <strong>Nacionalidad:</strong>
+            <img
+              src="../img/Flag_of_South_Korea.svg.png"
+              alt="Bandera de Corea del Sur"
+              width="4%"
+              style="margin: 5px"
+            /><img
+              src="../img/Flag_of_Japan.svg.png"
+              alt="Bandera de Japón"
+              width="4%"
+            /><br />
+            <strong>Cumpleaños:</strong> 30 de octubre de 2000<br />
+            <strong>Posición:</strong> Rapera Principal y Vocalista
+          </p>
+          <p>
+            Giselle es trilingüe (coreano, japonés e inglés) y destaca por su
+            potente rap y su capacidad de conectar con fans internacionales.
+          </p>
+        </div>
+        <!-- Winter -->
+        <div
+          class="tab-pane fade"
+          id="pills-winter"
+          role="tabpanel"
+          aria-labelledby="pills-winter-tab"
+          tabindex="0"
+        >
+          <h2>Winter</h2>
+          <img src="../img/winter.webp" alt="Foto de Winter" width="25%" />
+          <br />
+          <p>
+            <strong>Nombre real:</strong> Kim Minjeong<br />
+            <strong>Nacionalidad:</strong>
+            <img
+              src="../img/Flag_of_South_Korea.svg.png"
+              alt="Bandera de Corea del Sur"
+              width="4%"
+            /><br />
+            <strong>Cumpleaños:</strong> 1 de enero de 2001<br />
+            <strong>Posición:</strong> Vocalista Principal y Bailarina
+          </p>
+          <p>
+            Winter es conocida por su dulce voz y habilidades de baile. Su
+            carisma natural y su sonrisa han capturado los corazones de muchos
+            fans.
+          </p>
+        </div>
+        <!-- NingNing -->
+        <div
+          class="tab-pane fade"
+          id="pills-ningning"
+          role="tabpanel"
+          aria-labelledby="pills-ningning-tab"
+          tabindex="0"
+        >
+          <h2>NingNing</h2>
+          <img src="../img/ningning.webp" alt="Foto de NingNing" width="25%" />
+          <br />
+          <p>
+            <strong>Nombre real:</strong> Ning Yizhuo<br />
+            <strong>Nacionalidad:</strong>
+            <img
+              src="../img/Flag_of_the_People's_Republic_of_China.svg.png"
+              alt="Bandera de China"
+              width="4%"
+            /><br />
+            <strong>Cumpleaños:</strong> 23 de octubre de 2002<br />
+            <strong>Posición:</strong> Vocalista Principal
+          </p>
+          <p>
+            NingNing es la integrante más joven de aespa y destaca por su
+            poderosa voz. Antes de debutar, era conocida por sus actuaciones
+            como trainee en China.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-white py-4" style="background-color: #2c2c2c">
+      <div id="footer-container" class="container d-flex justify-content-between align-items-center">
+        <!-- Redes sociales -->
+        <div id="footer-social" class="social-icons">
+          <h4 class="mb-3">Conecta con aespa</h4>
+          <a href="https://www.instagram.com/aespa_official/" target="_blank" title="Instagram Oficial" class="social-icon">
+            <img src="../img/instagram-icon.png" alt="Instagram" width="30" class="me-2" />
+          </a>
+          <a href="https://twitter.com/aespa_official" target="_blank" title="Twitter Oficial" class="social-icon">
+            <img src="../img/twitter-icon.png" alt="Twitter" width="30" class="me-2" />
+          </a>
+          <a href="https://www.youtube.com/aespa" target="_blank" title="YouTube Oficial" class="social-icon">
+            <img src="../img/youtube-icon.png" alt="YouTube" width="30" class="me-2" />
+          </a>
+          <a href="https://www.facebook.com/aespa.official" target="_blank" title="Facebook Oficial" class="social-icon">
+            <img src="../img/facebook-icon.png" alt="Facebook" width="30" class="me-2" />
+          </a>
+          <a href="https://www.tiktok.com/@aespa_official" target="_blank" title="TikTok Oficial" class="social-icon">
+            <img src="../img/tiktok-icon.png" alt="TikTok" width="30" class="me-2" />
+          </a>
+          <a href="https://weibo.com/u/7479199632/" target="_blank" title="Weibo Oficial" class="social-icon">
+            <img src="../img/weibo-icon.png" alt="Weibo" width="30" class="me-2" />
+          </a>
+        </div>
+    
+        <!-- Copyright centrado -->
+        <div id="footer-copyright">
+          <p class="mb-0">&copy; 2025 Info aespa.<br />Todos los derechos reservados.</p>
+        </div>
+    
+        <!-- Formulario -->
+        <div id="footer-form">
+          <h4 class="mb-2">Suscríbete a novedades</h4>
+          <form>
+            <div class="mb-2">
+              <input type="email" class="form-control form-control-sm" id="email" placeholder="ejemplo@correo.com" required />
+            </div>
+            <div class="mb-2">
+              <select class="form-select form-select-sm" id="region" required>
+                <option selected disabled>Selecciona tu región</option>
+                <option>Asia</option>
+                <option>Norteamérica</option>
+                <option>Latinoamérica</option>
+                <option>Europa</option>
+                <option>Oceanía</option>
+                <option>África</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--     <script>
+      function showTab(tabId) {
+        // Eliminar la clase 'active' de todas las pestañas y contenidos
+        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('show', 'active'));
+        
+        // Añadir la clase 'active' a la pestaña seleccionada y su contenido
+        document.querySelector(`#${tabId}-tab`).classList.add('active');
+        document.querySelector(`#${tabId}`).classList.add('show', 'active');
+      }
+    </script> -->
+    <script>
+      const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+      const container = canvas.parentElement; // Contenedor del canvas
+    
+      // Cargar imágenes
+      const bgImage = new Image();
+      bgImage.src = "../img/CanvaFondo.png";
+    
+      const characters = [
+        "",
+        "../img/CanvaMiembros1.png",
+        "../img/CanvaMiembros2.png",
+        "../img/CanvaMiembros3.png",
+        "../img/CanvaMiembros4.png",
+      ].map((src) => {
+        let img = new Image();
+        img.src = src;
+        return img;
+      });
+    
+      let currentIndex = 0; // Índice del personaje que se mostrará
+    
+      function resizeCanvas() {
+        // Ajustar el ancho del canvas al del contenedor
+        canvas.width = container.clientWidth;
+        
+        // Mantener la relación de aspecto de la imagen de fondo
+        const aspectRatio = bgImage.width / bgImage.height;
+        canvas.height = canvas.width / aspectRatio;
+    
+        // Redibujar la escena después de cambiar el tamaño
+        drawScene();
+      }
+    
+      function drawScene() {
+        // Dibujar el fondo ajustado al tamaño del canvas
+        ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
+    
+        // Dibujar personajes hasta el índice actual
+        for (let i = 0; i <= currentIndex; i++) {
+          ctx.drawImage(characters[i], 0, -50, canvas.width, canvas.height + 50); // Ajustar tamaño a canvas
+        }
+      }
+    
+      bgImage.onload = function () {
+        resizeCanvas(); // Ajustar el tamaño inicial
+        drawScene();
+    
+        // Agregar personajes uno a uno cada 1.5 segundos
+        let interval = setInterval(() => {
+          if (currentIndex < characters.length - 1) {
+            currentIndex++;
+            drawScene();
+          } else {
+            clearInterval(interval); // Detener cuando todos estén en pantalla
+          }
+        }, 1500);
+      };
+    
+      // Redimensionar canvas cuando cambie el tamaño de la ventana
+      window.addEventListener("resize", resizeCanvas);
+    </script>
+    
+  </body>
+</html>

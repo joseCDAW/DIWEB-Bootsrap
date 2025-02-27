@@ -1,0 +1,511 @@
+$gradient-start: #91a8eb;
+$gradient-end: #e198cb;
+$text-color: white;
+$navbar-bg: transparent;
+$play-btn-bg: #ffffff;
+$play-btn-hover-bg: #7597de;
+$profile-bg: rgba(0, 0, 0, 0.5);
+$fuentes: "aespa Regular", Times, sans-serif;
+
+@font-face {
+    font-family: 'aespa Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('aespa Regular'), url('../../fuente/aespa_Regular.woff') format('woff'),
+}
+
+html,
+body {
+    height: 100%;
+    /* Asegúrate de que el html y body ocupen el 100% */
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+}
+
+body {
+    background: linear-gradient(to right, $gradient-start, $gradient-end);
+    color: $text-color;
+    font-family: $fuentes;
+}
+
+.navbar {
+    background-color: $navbar-bg;
+}
+
+.navbar a {
+    color: $text-color;
+    margin: 0 10px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    /* Cambia el color de fondo al pasar el ratón */
+    color: white;
+    /* Cambia el color del texto al pasar el ratón */
+}
+
+#home,
+#explicacion,
+#cards,
+#contenido_tours,
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.main-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.play-btn {
+    background: $play-btn-bg;
+    color: #2b1055;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.play-btn:hover {
+    background: $play-btn-hover-bg;
+    color: $text-color;
+}
+
+.profile-section {
+    background: $profile-bg;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+
+}
+
+.video {
+    .overlay {
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.5); // Usa transparencia para resaltar el texto
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    video {
+        height: auto;
+        max-height: 600px;
+        object-fit: cover; // Para asegurar un buen ajuste del video
+    }
+}
+
+/* Personalización del ancho del carrusel */
+.custom-carousel {
+    width: 70%;
+    /* Ocupa el 80% del ancho de la página */
+}
+
+/* Cambiar el color de las flechas del carrusel */
+.carousel-control-prev-icon {
+    background-color: #91a8eb;
+    /* Color de la flecha izquierda */
+    border-radius: 50%;
+    /* Hace la flecha más estética */
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.carousel-control-next-icon {
+    background-color: #e198cb;
+    /* Color de la flecha derecha */
+    border-radius: 50%;
+    /* Hace la flecha más estética */
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+.profile-section {
+    max-width: 90%;
+    /* Ajusta según el tamaño deseado */
+    width: 100%;
+    /* Usa todo el espacio disponible */
+    margin: auto;
+    /* Centra horizontalmente */
+}
+
+.nav-pills .nav-link {
+    color: white;
+    /* Color para pestañas no seleccionadas */
+}
+
+.nav-pills .nav-link.active {
+    color: white;
+    /* Color para la pestaña activa */
+}
+
+.custom-popover {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #444444;
+}
+
+.custom-popover .popover-header {
+    font-weight: bold;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.custom-popover .popover-body {
+    color: #dddddd;
+}
+
+/* Asegura que la tabla se ajuste en móviles */
+.table-responsive {
+    overflow-x: auto;
+    /* Permite que la tabla se adapte */
+}
+
+.table td,
+.table th {
+    white-space: nowrap;
+    /* Evita que el texto se corte en varias líneas */
+    text-overflow: ellipsis;
+    /* Agrega puntos suspensivos para texto largo */
+}
+
+.table img {
+    max-width: 100%;
+    /* Asegura que las imágenes se ajusten a móviles */
+    height: auto;
+}
+
+#barraBusqueda {
+    flex: 1;
+    min-width: 200px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .col-canciones {
+        display: none;
+    }
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2, #d65db1);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s ease infinite;
+}
+
+/* Quitar subrayado en los botones de los miembros */
+#pills-home-tab,
+#pills-karina-tab,
+#pills-giselle-tab,
+#pills-winter-tab,
+#pills-ningning-tab {
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Mantiene el efecto de escala y color al pasar el mouse */
+#pills-home-tab:hover,
+#pills-karina-tab:hover,
+#pills-giselle-tab:hover,
+#pills-winter-tab:hover,
+#pills-ningning-tab:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Evita que estos botones tengan el subrayado */
+#pills-home-tab::after,
+#pills-karina-tab::after,
+#pills-giselle-tab::after,
+#pills-winter-tab::after,
+#pills-ningning-tab::after {
+    content: none !important;
+}
+
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+@keyframes glow {
+    0% {
+        filter: brightness(50%);
+    }
+
+    50% {
+        filter: brightness(100%);
+    }
+
+    100% {
+        filter: brightness(50%);
+    }
+}
+
+.logo {
+    animation: glow 2s infinite alternate ease-in-out;
+}
+
+/* Estilos generales del footer */
+#footer-container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos específicos para móvil */
+@media (max-width: 768px) {
+    #footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-social {
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+
+    #footer-social a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #footer-copyright {
+        position: static !important;
+        transform: none !important;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #footer-form {
+        text-align: center !important;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* Estilos para la página de Tours de aespa */
+.tour-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.tour-content {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.tour-content:hover {
+    transform: scale(1.02);
+}
+
+.continent-stats {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.continent-stats:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tour-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #ae44ff, #4442ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleFade 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleFade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tour-date {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff44e3, #44a7ff);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.continent-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ae44ff;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/* Estilos para animaciones de scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .tour-title {
+        font-size: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .tour-section {
+        padding: 50px 0;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-social,
+    #footer-copyright,
+    #footer-form {
+        margin-bottom: 20px;
+    }
+}
+
+.social-icon img {
+    transition: transform 0.3s, filter 0.3s;
+    /* Transición suave */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    /* Aumenta el tamaño del ícono */
+    filter: brightness(1.2);
+    /* Aumenta el brillo del ícono */
+}
+
+@import "../../bootstrap-5.3.3/scss/bootstrap";
